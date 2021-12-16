@@ -27,7 +27,14 @@ function Validate() {
             }
         }
         // numerieke velden
-
+        if ( strpos( $fieldtype, "int" ) !== false ) //als 'int' voorkomt in $fieldtype
+        {
+            if ( ! is_numeric( $_POST[$fieldname] ))
+            {
+                print "Het veld $fieldname is een int en mag enkel cijfers bevatten";
+                die();
+            }
+        }
     }
 }
 
