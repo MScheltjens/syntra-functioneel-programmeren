@@ -18,7 +18,7 @@ else
     print "CSRF is OK!!!!<br>";
 }
 
-// RETRIEVE TABLE DATA AND UPDATE WITH USER INPUT
+
 /*
 $table_name=$_POST["table"];
 

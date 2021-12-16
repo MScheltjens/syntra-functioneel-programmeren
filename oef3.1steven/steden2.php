@@ -3,6 +3,7 @@ error_reporting( E_ALL );
 ini_set( 'display_errors', 1 );
 
 session_start();
+$_SESSION['blabla'] = "Dit is blabla";
 
 require_once "lib/pdo.php";
 require_once "lib/html_functions.php";

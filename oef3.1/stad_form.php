@@ -18,9 +18,12 @@ PrintJumbo("Bewerk afbeelding", "Voer hier de nieuwe gegevens in ");
 <div class="container">
     <form action="lib/save_form.php" method="POST">
 
+        <!-- meta info -->
         <div class="form-group row">
             <input type="hidden" name="table" value="images">
             <input type="hidden" name="csrf" value="<?= GenerateCSRF("stad_form.php") ?>">
+            <!-- end meta info -->
+
             <label for="img_id" class="col-sm-2 col-form-label">ID</label>
             <div class="col-sm-10">
                 <input type="text" readonly class="form-control-plaintext" id="img_id" name="img_id" value="<?= $row["img_id"]; ?>">

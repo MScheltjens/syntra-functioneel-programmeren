@@ -30,7 +30,7 @@ function SaveFormData()
 
         foreach ( $_POST as $field => $value )
         {
-            //skip non-data fields
+            //skip non-data fields (meta-data)
             if ( in_array( $field, [ 'table', 'pkey', 'afterinsert', 'afterupdate' ] ) ) continue;
 
             //handle primary key field
