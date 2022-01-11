@@ -29,7 +29,6 @@
                 "Parijs" =>"parijs.jpeg"
             ];
 
-            $kolomnummer =1;
             foreach($afbeeldingen as $stad => $afbeelding) {
                 print "<div class='col-sm-4'>
                             <h3>$stad</h3>

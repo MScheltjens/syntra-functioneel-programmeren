@@ -15,6 +15,7 @@ function SaveFormData()
             die("Probleem met csrf");
         }
         //var_dump($_POST);
+
         $table = $pkey = $update = $insert = $where = $str_keys_values = "";
 
         if ( ! key_exists("table", $_POST)) die("Missing table");
@@ -30,11 +31,8 @@ function SaveFormData()
         //validation
         Validate();
 
-
         //BuildSQL()
         $sql = BuildSQL( $update, $insert, $table, $pkey);
-
-
 
         //run SQL
         $_SESSION['last_sql'] = $sql;

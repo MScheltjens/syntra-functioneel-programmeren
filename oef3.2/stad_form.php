@@ -19,6 +19,7 @@ PrintJumbo( $title = "Bewerk afbeelding", $subtitle = "" );
 
             //get data (model)
             $data = GetData( "select * from image where img_id=" . $_GET['img_id'] );
+            var_dump($data);
             //get template (view)
             $template = file_get_contents("templates/stad_form.html");
 

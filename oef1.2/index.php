@@ -38,6 +38,7 @@
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
                     <img src= ./img/$afbeelding width='300' height='200'>
                 </div>";
+            $kolomnummer ++;
         }
         ?>
     </div>

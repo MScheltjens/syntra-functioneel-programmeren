@@ -20,7 +20,6 @@ function PrintBody() {
     print '<body>';
 }
 
-
 //print end of page
 function EndOfPage() {
     print "</body>";

@@ -1,5 +1,6 @@
 <?php
 require_once 'html_components.php';
+require_once "database.php";
 
 //print header
 PrintHead("De leukste plekken in europa");
@@ -11,8 +12,7 @@ PrintJumbo("De leukste plekken in Europa", "Maak een keuze uit volgende steden v
     <div class="row">
 
         <?php
-        //we need data from the database, so...
-        require_once "database.php";
+        //we need data from the database
 
         $rows = GetData( "select * from image" );
 
